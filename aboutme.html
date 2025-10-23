@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="common_style.css">
-    <title>Benjamin Babu</title>
+    <title>Benjamin Babu | About Me</title>
+    <style>
+        .aboutme-layout {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .bento-img {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark-subtle" style="background-color: gray;" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark-subtle" aria-label="navbar" data-bs-theme="bg-light">
             <a class="navbar-brand mx-auto" href="index.html">
                 <img src="images/homeicon.png" width="5%" height="5%">
             </a>
 
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link"href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="aboutme.html">About Me</a>
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="aboutme.html" style="font-weight: 600;">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.html">Blog</a>
@@ -31,8 +43,86 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container py-4">
+        <h1>About me</h1>
+        <section class="aboutme-layout">
+            <img src="images/pfp.jpg" alt="a picture of moi" class="bento-img">
+            <article>
+                <p>
+                    Hey! My name is Benjamin, I'm am currently pursing a Master's in Computer Science from the
+                    University at Albany. I have worked on a wide range of projects, simulating a computer processor
+                    in Java to creating interactive games and tools with JavaScript and Python. 
+                </p>
+                <p>
+                    At UAlbany, I served as the Manager of IEEE Computer Society, where I helped grow the organization
+                    through events, hackathons, and hands-on workshops. I focused on promoting computer science on 
+                    campus and creating opportunities for students to explore tech, collaborate and build real-world
+                    skills.
+                </p>
+                <p>
+                    I enjoy solving problems, learning new frameworks, and making tech more creative and accessible.
+                    I am also into photography! I love capturing beautiful and interesting places through a lens.
+                </p>
+                <p>
+                    Feel free to checkout my
+                    <a href="https://github.com/benbabu02">GitHub</a>
+                    or my
+                    <a href="https://www.instagram.com/bensframed/">photography page</a>
+                </p>
+            </article>
+        </section>
+        <br>
+        <section class="aboutme-skills-list">
+            <article>
+                <h3>Techincal Skills</h3>
+                <ul>
+                    <li> <h6>Languages</h6>
+                        <ul>
+                            <li>
+                                Python
+                                <div class="progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%">85%</div>
+                                </div>
+                            </li>
+                            <li>
+                                C
+                                <div class="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%">70%</div>
+                                </div>
+                            </li>
+                            <li>
+                                Java
+                                <div class="progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 92%">92%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><h6>Tools</h6>
+                        <ul>
+                            <li>
+                                Git
+                                <div class="progress" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 94%">94%</div>
+                                </div>
+                            </li>
+                            <li>
+                                Linux
+                                <div class="progress" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 68%">68%</div>
+                                </div>
+                            </li>
+                            <li>
+                                Microsoft Office
+                                <div class="progress" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 98%">98%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </main>
 </body>
 </html>
